@@ -66,14 +66,14 @@ var user = responses.filter(function (person) { return person.type == 'user';});
     var html = user.map(function (response) {
           return  `
         <tr class="data-id-${response.id}">
-          <td data-label="STT">${i++}</td>
-          <td data-label="Hình ảnh" style="text-align: center;"><img
+          <td data-label="Number">${i++}</td>
+          <td data-label="Image" style="text-align: center;"><img
                   style="width: 50px;height: 50px; border-radius: 100%; object-fit: cover;"
                   src="${response.avatar}" alt=""></td>
-          <td data-label="Tên">${response.name}</td>
+          <td data-label="Name">${response.name}</td>
           <td data-label="Email">${response.email}</td>
           <td data-label="Phone">${response.phone}</td>
-          <td data-label="Xoá" class="right__iconTable"><a><img
+          <td data-label="Delete" class="right__iconTable"><a><img
                       src="assets/icon-trash-black.svg" onclick="deleteUser(${response.id})" alt=""></a></td>
       </tr>
         `;
@@ -90,15 +90,15 @@ function getListAdmin(responses) {
     var html = userAdmin.map(function (response) {
           return  `
           <tr>
-            <td data-label="STT">${j++}</td>
-            <td data-label="Tên">${response.name}</td>
-            <td data-label="Hình ảnh" style="text-align: center;"><img
+            <td data-label="Number">${j++}</td>
+            <td data-label="Name">${response.name}</td>
+            <td data-label="Image" style="text-align: center;"><img
                     style="width: 50px;height: 50px; border-radius: 100%; object-fit: cover;"
                     src="${response.avatar}" alt=""></td>
             <td data-label="Email">${response.email}</td>
-            <td data-label="Sửa" class="right__iconTable"><a ><img onclick="update_admin(${response.id})"
+            <td data-label="Edit" class="right__iconTable"><a ><img onclick="update_admin(${response.id})"
                         src="assets/icon-edit.svg" alt=""></a></td>
-            <td data-label="Xoá" class="right__iconTable"><a  ><img onclick="delete_admin(${response.id})"
+            <td data-label="Delete" class="right__iconTable"><a  ><img onclick="delete_admin(${response.id})"
                         src="assets/icon-trash-black.svg" alt=""></a></td>
         </tr>
         `;
@@ -113,20 +113,20 @@ function getListCourse(responses) {
     var html = responses.map(function (response) {
           return  `
           <tr>
-          <td data-label="STT">${j++}</td>
-          <td data-label="Tiêu đề">
+          <td data-label="Number">${j++}</td>
+          <td data-label="Title">
               <img src="${response.image}" alt="">
           </td>
-          <td data-label="Tên Khoa">${response.name}</td>
-          <td data-label="Giá SP">${response.totalUser}</td>
-          <td data-label="Mã giảm giá">
+          <td data-label="Course Name">${response.name}</td>
+          <td data-label="Price">${response.totalUser}</td>
+          <td data-label="Discount">
               <p id="limit">
               ${response.description}
               </p>
           </td>
-          <td data-label="Sửa" class="right__iconTable"><a><img onclick="update_course(${response.id})"
+          <td data-label="Edit" class="right__iconTable"><a><img onclick="update_course(${response.id})"
                       src="assets/icon-edit.svg" alt=""></a></td>
-          <td data-label="Xoá" class="right__iconTable"><a ><img  delete_course(${response.id})
+          <td data-label="Delete" class="right__iconTable"><a ><img  delete_course(${response.id})
                       src="assets/icon-trash-black.svg" alt=""></a></td>
       </tr>
         `;
@@ -142,13 +142,13 @@ function getListCategory(responses) {
     var htmls = blog.map(function (response) {
       return  `
       <tr>
-        <td data-label="STT">${j++}</td>
-        <td data-label="Tiêu đề">${response.name}</td>
-        <td data-label="Mô tả">${response.description}</td>
-        <td data-label="Sửa" class="right__iconTable"><a
+        <td data-label="Number">${j++}</td>
+        <td data-label="Title">${response.name}</td>
+        <td data-label="Description">${response.description}</td>
+        <td data-label="Edit" class="right__iconTable"><a
                 ><img onclick="update_category(${response.id})" src="assets/icon-edit.svg"
                     alt=""></a></td>
-        <td data-label="Xoá" class="right__iconTable"><a><img onclick="update_category(${response.id})"
+        <td data-label="Delete" class="right__iconTable"><a><img onclick="update_category(${response.id})"
                     src="assets/icon-trash-black.svg" alt=""></a></td>
       </tr>
         `;
@@ -165,13 +165,13 @@ function getListCategoryPodCast(responses) {
     var htmls = podcast.map(function (response) {
       return  `
       <tr>
-      <td data-label="STT">${j++}</td>
-      <td data-label="Tiêu đề">${response.name}</td>
-      <td data-label="Mô tả">${response.description}</td>
-      <td data-label="Sửa" class="right__iconTable"><a
+      <td data-label="NUmber">${j++}</td>
+      <td data-label="Title">${response.name}</td>
+      <td data-label="Description">${response.description}</td>
+      <td data-label="Edit" class="right__iconTable"><a
               ><img onclick="update_category(${response.id})" src="assets/icon-edit.svg"
                   alt=""></a></td>
-      <td data-label="Xoá" class="right__iconTable"><a><img onclick="update_category(${response.id})"
+      <td data-label="Delete" class="right__iconTable"><a><img onclick="update_category(${response.id})"
                   src="assets/icon-trash-black.svg" alt=""></a></td>
     </tr>
         `;
@@ -191,7 +191,7 @@ function getListBlog(responses) {
     var htmls = responses.map(function (response) {
       return  `
       <tr>
-      <td data-label="STT">${j++}</td>
+      <td data-label="Number">${j++}</td>
       <td data-label="Title">${response.title}</td>
       <td data-label="Image"><img src="${response.image}" alt=""></td>
       <td data-label="Category">${response.id_category}</td>
@@ -199,9 +199,9 @@ function getListBlog(responses) {
       <td data-label="Content" id="limit">
       ${response.content}
       </td>
-      <td data-label="Sửa" class="right__iconTable"><a ><img onclick="update_blog(${response.id})"
+      <td data-label="Edit" class="right__iconTable"><a ><img onclick="update_blog(${response.id})"
                   src="assets/icon-edit.svg" alt=""></a></td>
-      <td data-label="Xoá" class="right__iconTable"><a ><img onclick="delete_blog(${response.id})"
+      <td data-label="Delete" class="right__iconTable"><a ><img onclick="delete_blog(${response.id})"
                   src="assets/icon-trash-black.svg" alt=""></a></td>
   </tr>
         `;
@@ -220,7 +220,7 @@ function getListPodCast(responses) {
     var htmls = responses.map(function (response) {
       return  `
       <tr>
-          <td data-label="STT">${j++}</td>
+          <td data-label="Number">${j++}</td>
           <td data-label="Title">${response.title}</td>
           <td data-label="Image"><img src="${response.image}" alt=""></td>
           <td data-label="Audio">
@@ -232,9 +232,9 @@ function getListPodCast(responses) {
           <td data-label="Content" id="limit">
           ${response.content}
           </td>
-          <td data-label="Sửa" class="right__iconTable"><a><img onclick="update_podcast(${response.id})"
+          <td data-label="Edit" class="right__iconTable"><a><img onclick="update_podcast(${response.id})"
                       src="assets/icon-edit.svg" alt=""></a></td>
-          <td data-label="Xoá" class="right__iconTable"><a  ><img onclick="delete_podcast(${response.id})"
+          <td data-label="Delete" class="right__iconTable"><a  ><img onclick="delete_podcast(${response.id})"
                       src="assets/icon-trash-black.svg" alt=""></a></td>
       </tr>
         `;

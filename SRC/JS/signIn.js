@@ -19,24 +19,24 @@ function checkInputs() {
   const passVal = pass.value.trim()
   const cfpassVal = cfpass.value.trim()
 
-  if (usernameVal === '') return setError(username, 'Tên người dùng không được trống')
-  else if (usernameVal.length < 8) return setError(username, 'Tên người dùng phải có từ 8 kí tự trở lên')
+  if (usernameVal === '') return setError(username, 'Username cannot be empty')
+  else if (usernameVal.length < 8) return setError(username, 'Username must have at least 8 character')
   else { setSuccess(username) }
 
-  if (emailVal === '') return setError(email, 'Nhập vào email')
-  else if (!isEmail(emailVal)) return setError(email, 'Hãy nhập vào email đúng định dạng')
+  if (emailVal === '') return setError(email, 'Enter Email')
+  else if (!isEmail(emailVal)) return setError(email, 'PLease enter the correct Email format')
   else { setSuccess(email) }
 
-  if (phoneVal === '') return setError(phoneNumber, 'Nhập vào số điện thoại')
-  else if (!isPhone(phoneVal)) return setError(phoneNumber, 'Hãy nhập số điện thoại hợp lệ')
+  if (phoneVal === '') return setError(phoneNumber, 'Enter Phone Number')
+  else if (!isPhone(phoneVal)) return setError(phoneNumber, 'PLease enter the correct Phone Number')
   else { setSuccess(phoneNumber) }
 
-  if (passVal === '') return setError(pass, 'Nhập vào mật khẩu')
-  else if (passVal.length < 6) return setError(pass, 'Mật khẩu không được ít hơn 6 kí tự')
+  if (passVal === '') return setError(pass, 'Enter Password')
+  else if (passVal.length < 6) return setError(pass, 'Password must have more than 6 chracter')
   else { setSuccess(pass) }
 
-  if (cfpassVal === '') return setError(cfpass, 'Xác nhận lại mật khẩu')
-  else if (passVal !== cfpassVal) return setError(cfpass, 'Mật khẩu xác nhận không trùng khớp')
+  if (cfpassVal === '') return setError(cfpass, 'Re-enter Password')
+  else if (passVal !== cfpassVal) return setError(cfpass, 'Password does not match, please re-enter Password')
   else { setSuccess(cfpass) }
 }
 

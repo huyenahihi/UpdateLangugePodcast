@@ -13,7 +13,7 @@ form.addEventListener('submit', function (e) {
     "phone": phoneNumber,
     "avatar": localhost+ "WebsitePodcast/IMG/user.jpg",
     "type": "user",
-    "ranker": "đồng"
+    "ranker": "Bronze"
   }
   VALUE = JSON.stringify(datas);
 

@@ -65,7 +65,7 @@ async function fetchText() {
                          <p class="realtimedt_cm">${comment.reg_date}</p>
                        </div>
                        <div style="position: relative; top: 6px; left: 9px; font-size: 7px; cursor: pointer;">
-                         <i class="fas fa-crown" title="Quản trị viên"></i> Render
+                         <i class="fas fa-crown" title="Admin"></i> Render
                        </div>
                      </div>
                      <div class="dotdel">
@@ -74,7 +74,7 @@ async function fetchText() {
                    </div>
                    <div class="delcomment">
                      <span class="del">
-                      Xóa
+                      Delete
                      </span>
                    </div>
                    <div class="content_cm">
@@ -84,18 +84,18 @@ async function fetchText() {
                      <div class="like_rep">
                        <div>
                          <i class="far fa-heart" id="heart"></i>
-                         <span>Thích</span>
+                         <span>Heart</span>
                        </div>
                        <div>
                          <i class="far fa-comment-alt"></i>
-                         <span class="rep">Phản hồi</span>
+                         <span class="rep">Response</span>
                        </div>
                      </div>
                      <div class="people_liked">
                        <div>
                          <img src="../../IMG/logo_vn.png" alt="" style="width: 13px; height: 13px; border-radius: 50%;">
                        </div>
-                       <span>1</span>&nbsp;lượt thích
+                       <span>1</span>&nbsp;Like
                      </div>
                    </div>
                     <!-- Viết phản hồi đầu tiên cho bình luận -->
@@ -108,7 +108,7 @@ async function fetchText() {
                      <form class="feedback__text">
                        <div class="feedback_btn">
                          <div class="input_feedback">
-                           <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
+                           <textarea type="text" placeholder="Write Feedback..." class="feedbackText"></textarea>
                          </div>
                        </div>
                        <div class="feedback_event">
@@ -124,8 +124,8 @@ async function fetchText() {
                            </div>
                          </div>
                          <div class="btn_cm">
-                           <button class="close_feedback" type="button">Hủy</button>
-                           <button class="post_feedback" type="submit">Đăng</button>
+                           <button class="close_feedback" type="button">Cancel</button>
+                           <button class="post_feedback" type="submit">Post</button>
                          </div>
                        </div>
                      </form>

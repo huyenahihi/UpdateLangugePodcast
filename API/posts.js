@@ -34,10 +34,10 @@ function renderLayoutBlog(responses){
       </div>
       <div class="info__text">
         <h5>${response.user}</h5>
-        <p class="realtime">4 giờ trước</p>
+        <p class="realtime">4 Hours Ago</p>
       </div>
       <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
-        <i class="fas fa-crown" title="Quản trị viên"></i>
+        <i class="fas fa-crown" title="Admin"></i>
       </div>
     </div>
     <div class="item__title" >

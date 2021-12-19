@@ -19,17 +19,17 @@ fetch(url_blog)
                 </div>
                 <div class="info__text">
                   <h5>${response.user}</h5>
-                  <p class="realtimebl">4 giờ trước</p>
+                  <p class="realtimebl">4 Hours Ago</p>
                 </div>
                 <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
-                  <i class="fas fa-crown" title="Quản trị viên"></i>
+                  <i class="fas fa-crown" title="Admin"></i>
                 </div>
               </div>
               <div class="dots">
                 <i class="fas fa-ellipsis-v"></i>
                 <span class="share" id="share">
                   <i class="fas fa-share"></i>
-                  Chia sẻ bài đăng
+                  Share
                 </span>
               </div>
             </div>
