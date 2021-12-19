@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chi tiết Blog</title>
+  <title>Blog Detail</title>
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
       <div class="categories">
         <div class="categories__menu">
           <ul class="menu">
-            <li><a href="homepage.html" onclick="toggleMenu();">Trang chủ</a></li>
+            <li><a href="homepage.html" onclick="toggleMenu();">Homepage</a></li>
             <li class="item_02">
               <a href="./blog.html">Blog</a>
               <span><i class="fas fa-chevron-down"></i></span>
@@ -46,17 +46,17 @@
               </ul>
             </li>
             <li class="item_02">
-              <a href="" onclick="toggleMenu();">Thư viện</a>
+              <a href="" onclick="toggleMenu();">Library</a>
               <span><i class="fas fa-chevron-down"></i></span>
               <ul class="sub_menu">
-                <li><a href="">Group cộng đồng</a></li>
-                <li><a href="">Đăng ký thành viên</a></li>
-                <li><a href="">Thư viện cộng đồng</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Community Group</a></li>
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">Community Library</a></li>
+                <li><a href="">Contact</a></li>
               </ul>
             </li>
-            <li><a href="homepage.html#books" onclick="toggleMenu();">Sách</a></li>
-            <li class="item_05"><a href="courses.html" onclick="toggleMenu();">Khóa học</a></li>
+            <li><a href="homepage.html#books" onclick="toggleMenu();">Book</a></li>
+            <li class="item_05"><a href="courses.html" onclick="toggleMenu();">Course</a></li>
           </ul>
         </div>
         <div class="contact__icon">
@@ -107,7 +107,7 @@
               <span>Tất cả thông báo</span>
             </div>
           </ul>-->
-         <img style="display: none;" src="" class="user-img" alt="Tài khoản" title="Tài khoản" id="profile"> 
+         <img style="display: none;" src="" class="user-img" alt="Account" title="Account" id="profile"> 
           <div class="logout" id="logout">
             <ul>
               <li id="name-profile"></li>
@@ -115,7 +115,7 @@
               <li><a href="">My L&D Center</a></li>
               <li><a href="">My Account</a></li>
               <li class="line-logout"></li>
-              <li><a id="logouthome" href="homepage.html">Đăng xuất</a></li>
+              <li><a id="logouthome" href="homepage.html">Logout</a></li>
             </ul>
           </div>
         </div>
@@ -135,7 +135,7 @@
     <div class="share__postdt">
       <div class="share__contentdt">
         <div class="flex">
-          <div class="share__titledt">Chia sẻ bài đăng</div>
+          <div class="share__titledt">Share Post</div>
           <div class="share__icondt">
             <img src="../../IMG/facebook-logo.png" alt="">
             <img src="../../IMG/twitter-logo.png" alt="">
@@ -154,16 +154,16 @@
       <div class="item__listdt">
         <ul>
           <li><a href="blog.html">All Posts</a></li>
-          <li><a href="blog_title.html">Ký năng tương lai</a></li>
-          <li><a href="blog_title.html">Phát triển bản thân</a></li>
+          <li><a href="blog_title.html">Future Skills</a></li>
+          <li><a href="blog_title.html">Personal Development</a></li>
           <li style="font-weight: 600;">
-            Khác
+            Others
             <i class="fas fa-chevron-down" style="font-size: 12px;"></i>
             <ul>
-              <li><a href="blog_title.html">Cuộc sống & hạnh phúc</a></li>
-              <li><a href="blog_title.html">Thơ & tản văn</a></li>
+              <li><a href="blog_title.html">Life & Happiness</a></li>
+              <li><a href="blog_title.html">Poetry & Literature</a></li>
               <li><a href="blog_title.html">Travel</a></li>
-              <li><a href="blog_title.html">Phỏng vấn & báo chí</a></li>
+              <li><a href="blog_title.html">Interview & Press</a></li>
             </ul>
           </li>
         </ul>
@@ -176,7 +176,7 @@
         </div>
         <div class="loginout__item">
           <a href="login.html">
-            <button>Đăng nhập / Đăng ký</button>
+            <button>SignIn / SignUp</button>
           </a>
         </div>
       </div>
@@ -197,11 +197,11 @@
           </div>
           <form class="comment__text">
             <div class="comment_btn">
-              <button type="button" id="comment">Viết bình luận...</button>
+              <button type="button" id="comment">Write Comment...</button>
               <div class="input_commnent">
                 <div data-emojiarea data-type="unicode" data-global-picker="false">
                   <div class="emoji-button">&#x1f604;</div> 
-                  <textarea type="text" placeholder="Viết bình luận..."></textarea>
+                  <textarea type="text" placeholder="Write Comment..."></textarea>
                 </div>
               </div>
             </div>
@@ -220,8 +220,8 @@
                 </div>
               </div>
               <div class="btn_cm">
-                <button class="close_comment" type="button">Hủy</button>
-                <button class="post_comment" type="submit">Đăng</button>
+                <button class="close_comment" type="button">Cancel</button>
+                <button class="post_comment" type="submit">Post</button>
               </div>
             </div>
           </form>
@@ -234,10 +234,10 @@
     <!-- Title bài viết mới đăng -->
     <div class="blogCurent_Title">
       <div class="title_current">
-        Bài đăng gần đây
+        Recent Posts
       </div>
       <div class="view__all">
-        <a href="blog.html">Xem tất cả</a>
+        <a href="blog.html">View all</a>
       </div>
     </div>
 
@@ -250,7 +250,7 @@
             alt="">
         </div>
         <div class="item__title">
-          <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+          <h3>COVID & PERSONAL BELIEVES</h3>
         </div>
         <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
         <div class="item__icon">
@@ -265,7 +265,7 @@
             alt="">
         </div>
         <div class="item__title">
-          <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+          <h3>COVID & PERSONAL BELIEVES</h3>
         </div>
         <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
         <div class="item__icon">
@@ -280,7 +280,7 @@
             alt="">
         </div>
         <div class="item__title">
-          <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+          <h3>COVID & PERSONAL BELIEVES</h3>
         </div>
         <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
         <div class="item__icon">
@@ -301,10 +301,10 @@
     <div class="footer">
       <div class="footer__content">
         <div class="contact__ft">
-          <h3>Hãy nhập vào email để phản hồi</h3>
+          <h3>Please enter your email to leave suggestion</h3>
           <input type="text" placeholder="example@gmail.com">
           <div>
-            <button>Subcribe</button>
+            <button>Subscribe</button>
           </div>
         </div>
       </div>
@@ -317,7 +317,7 @@
      <div class="chatbot">
       <div class="btn_chatbot" onclick="openChatBot()">
         <i class="lar la-comment"></i>
-        <span>Tin nhắn online</span>
+        <span>Online Message</span>
       </div>
     </div>
     <div class="chat_mess">
@@ -328,7 +328,7 @@
           </div>
           <div class="status">
             <i class="fas fa-circle"></i>
-            <span>Trực tuyến</span>
+            <span>Online</span>
           </div>
         </div>
         <div class="close_chat" onclick="closeChatBot()">
@@ -359,7 +359,7 @@
       </div>
       <div class="input_mess">
         <div class="messText">
-         <textarea name="" id="messsubmit" placeholder="Nhập vào tin nhắn của bạn"></textarea>
+         <textarea name="" id="messsubmit" placeholder="Enter Message"></textarea>
         </div>
         <div class="messEmoji">
           <i class="las la-paperclip"></i>
@@ -393,14 +393,14 @@
               <p></p>
             </div>
             <div style="position: relative; top: -1px; left: 5px; font-size: 10px; cursor: pointer;">
-              <i class="fas fa-crown" title="Quản trị viên"></i>
+              <i class="fas fa-crown" title="Admin"></i>
             </div>
             <span class="realtimedt">${responses.reg_date}</span>
           </div>
           <div class="dotsdt">
             <i class="fas fa-ellipsis-v dot"></i>
             <span class="sharedt" id="share">
-              <i class="fas fa-share" style="margin-right: 10px;"></i>Chia sẻ bài đăng
+              <i class="fas fa-share" style="margin-right: 10px;"></i>Share Post
             </span>
           </div>
         </div>
@@ -441,15 +441,15 @@
             </ul>
           </div>
           <div class="share__text">
-            <a href="">Phát triển bản thân</a>
+            <a href="">Personal Development</a>
           </div>
         </div>
 
         <!-- View blog -->
         <div class="blog__view">
-          <div class="view"> ${responses.numview}<span> lượt xem</span></div>
+          <div class="view"> ${responses.numview}<span> View</span></div>
           <div class="like" style="display: flex;">
-            <div style="margin-right: 10px; text-decoration: underline;"> ${responses.numcomment} bình luận</div>
+            <div style="margin-right: 10px; text-decoration: underline;"> ${responses.numcomment} Comment</div>
             <span> ${responses.numlove}</span>&nbsp;<i class="far fa-heart"></i>
           </div>
         </div>
